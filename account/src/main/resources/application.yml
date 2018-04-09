@@ -1,0 +1,11 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /stretch
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/stretch/eureka/
+spring:
+  application:
+    name: account

@@ -1,0 +1,14 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/stretch/eureka/
+server:
+  port: 8084
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: ribbon
+spring:
+  application:
+    name: zuul
